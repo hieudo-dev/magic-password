@@ -1,0 +1,43 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 64px;
+}
+
+.form__input {
+  margin-top: 24px;
+  padding: 6px 12px;
+  border-radius: 24px;
+  border: 2px solid blue;
+}
+
+.form__input--error {
+  border-color: red;
+}
+
+.form__input--shake {
+  animation: shake ease 0.15s 0s 3;
+}
+
+.form__submit {
+  border-radius: 24px;
+  margin-top: 24px;
+  padding: 4px 20px;
+}
+
+@keyframes shake {
+  0% {
+    margin-left: 0rem;
+  }
+  25% {
+    margin-left: 0.75rem;
+  }
+  75% {
+    margin-left: -0.75rem;
+  }
+  100% {
+    margin-left: 0rem;
+  }
+}
